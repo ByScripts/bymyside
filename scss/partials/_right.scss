@@ -7,7 +7,7 @@
         color: $bymyside-right-text-color;
         background-color: $bymyside-right-bg-color;
 
-        .bymyside {
+        .bymyside-block {
             right: 0;
             background-color: $bymyside-right-bg-color;
             &:hover {
@@ -16,14 +16,13 @@
                     padding: 0 10px 0 20px;
                 }
             }
-        }
+            &-top {
+                top: $bymyside-right-offset-top;
+            }
 
-        .bymyside-top {
-            top: $bymyside-right-offset-top;
-        }
-
-        .bymyside-bottom {
-            bottom: $bymyside-right-offset-bottom;
+            &-bottom {
+                bottom: $bymyside-right-offset-bottom;
+            }
         }
 
         .bymyside-item-icon, .bymyside-item-label {
@@ -39,7 +38,7 @@
             text-align: right;
         }
 
-        .bymyside-item-color-default {
+        .bymyside-item-scheme-default {
             background-color: $bymyside-right-bg-color;
             color: $bymyside-right-text-color;
             &:hover .bymyside-item-icon,

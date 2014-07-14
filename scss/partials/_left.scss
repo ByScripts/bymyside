@@ -7,7 +7,7 @@
         color: $bymyside-left-text-color;
         background-color: $bymyside-left-bg-color;
 
-        .bymyside {
+        .bymyside-block {
             left: 0;
             background-color: $bymyside-left-bg-color;
             &:hover {
@@ -16,14 +16,13 @@
                     padding: 0 20px 0 10px;
                 }
             }
-        }
+            &-top {
+                top: $bymyside-left-offset-top;
+            }
 
-        .bymyside-top {
-            top: $bymyside-left-offset-top;
-        }
-
-        .bymyside-bottom {
-            bottom: $bymyside-left-offset-bottom;
+            &-bottom {
+                bottom: $bymyside-left-offset-bottom;
+            }
         }
 
         .bymyside-item-icon, .bymyside-item-label {
@@ -39,7 +38,7 @@
             text-align: left;
         }
 
-        .bymyside-item-color-default {
+        .bymyside-item-scheme-default {
             background-color: $bymyside-left-bg-color;
             color: $bymyside-left-text-color;
             &:hover .bymyside-item-icon,

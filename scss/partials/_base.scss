@@ -1,13 +1,13 @@
 @import "schemes";
 
 .bymyside-container {
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     white-space: nowrap;
 }
 
-.bymyside {
+.bymyside-block {
     position: absolute;
     display: table;
     overflow: hidden;
@@ -40,7 +40,7 @@
 }
 
 @each $scheme, $colors in $bymyside-schemes {
-    .bymyside-item-color-#{$scheme} {
+    .bymyside-item-scheme-#{$scheme} {
         background-color: map_get($colors, 'bg');
         color: map_get($colors, 'text');
         &:hover .bymyside-item-icon,

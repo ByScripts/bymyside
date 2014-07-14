@@ -1,17 +1,17 @@
 /* line 3, ../../scss/partials/_base.scss */
 .bymyside-container {
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   white-space: nowrap; }
 
 /* line 10, ../../scss/partials/_base.scss */
-.bymyside {
+.bymyside-block {
   position: absolute;
   display: table;
   overflow: hidden; }
   /* line 15, ../../scss/partials/_base.scss */
-  .bymyside:hover .bymyside-item-label {
+  .bymyside-block:hover .bymyside-item-label {
     display: table-cell; }
 
 /* line 21, ../../scss/partials/_base.scss */
@@ -35,38 +35,38 @@
   display: none; }
 
 /* line 43, ../../scss/partials/_base.scss */
-.bymyside-item-color-blue {
+.bymyside-item-scheme-blue {
   background-color: transparent;
   color: inherit; }
   /* line 46, ../../scss/partials/_base.scss */
-  .bymyside-item-color-blue:hover .bymyside-item-icon, .bymyside-item-color-blue:hover .bymyside-item-label, .bymyside-item-color-blue.bymyside-item-highlight .bymyside-item-icon {
+  .bymyside-item-scheme-blue:hover .bymyside-item-icon, .bymyside-item-scheme-blue:hover .bymyside-item-label, .bymyside-item-scheme-blue.bymyside-item-highlight .bymyside-item-icon {
     background-color: #5bc0de;
     color: white; }
 
 /* line 43, ../../scss/partials/_base.scss */
-.bymyside-item-color-yellow {
+.bymyside-item-scheme-yellow {
   background-color: transparent;
   color: inherit; }
   /* line 46, ../../scss/partials/_base.scss */
-  .bymyside-item-color-yellow:hover .bymyside-item-icon, .bymyside-item-color-yellow:hover .bymyside-item-label, .bymyside-item-color-yellow.bymyside-item-highlight .bymyside-item-icon {
+  .bymyside-item-scheme-yellow:hover .bymyside-item-icon, .bymyside-item-scheme-yellow:hover .bymyside-item-label, .bymyside-item-scheme-yellow.bymyside-item-highlight .bymyside-item-icon {
     background-color: #f0ad4e;
     color: white; }
 
 /* line 43, ../../scss/partials/_base.scss */
-.bymyside-item-color-red {
+.bymyside-item-scheme-red {
   background-color: transparent;
   color: inherit; }
   /* line 46, ../../scss/partials/_base.scss */
-  .bymyside-item-color-red:hover .bymyside-item-icon, .bymyside-item-color-red:hover .bymyside-item-label, .bymyside-item-color-red.bymyside-item-highlight .bymyside-item-icon {
+  .bymyside-item-scheme-red:hover .bymyside-item-icon, .bymyside-item-scheme-red:hover .bymyside-item-label, .bymyside-item-scheme-red.bymyside-item-highlight .bymyside-item-icon {
     background-color: #d9534f;
     color: white; }
 
 /* line 43, ../../scss/partials/_base.scss */
-.bymyside-item-color-green {
+.bymyside-item-scheme-green {
   background-color: transparent;
   color: inherit; }
   /* line 46, ../../scss/partials/_base.scss */
-  .bymyside-item-color-green:hover .bymyside-item-icon, .bymyside-item-color-green:hover .bymyside-item-label, .bymyside-item-color-green.bymyside-item-highlight .bymyside-item-icon {
+  .bymyside-item-scheme-green:hover .bymyside-item-icon, .bymyside-item-scheme-green:hover .bymyside-item-label, .bymyside-item-scheme-green.bymyside-item-highlight .bymyside-item-icon {
     background-color: #5cb85c;
     color: white; }
 
@@ -77,37 +77,37 @@
   color: #dddddd;
   background-color: #333333; }
   /* line 10, ../../scss/partials/_left.scss */
-  .bymyside-container-left .bymyside {
+  .bymyside-container-left .bymyside-block {
     left: 0;
     background-color: #333333; }
     /* line 13, ../../scss/partials/_left.scss */
-    .bymyside-container-left .bymyside:hover {
+    .bymyside-container-left .bymyside-block:hover {
       border-radius: 0 10px 10px 0; }
       /* line 15, ../../scss/partials/_left.scss */
-      .bymyside-container-left .bymyside:hover .bymyside-item-label {
+      .bymyside-container-left .bymyside-block:hover .bymyside-item-label {
         padding: 0 20px 0 10px; }
-  /* line 21, ../../scss/partials/_left.scss */
-  .bymyside-container-left .bymyside-top {
-    top: 20px; }
-  /* line 25, ../../scss/partials/_left.scss */
-  .bymyside-container-left .bymyside-bottom {
-    bottom: 20px; }
-  /* line 29, ../../scss/partials/_left.scss */
+    /* line 19, ../../scss/partials/_left.scss */
+    .bymyside-container-left .bymyside-block-top {
+      top: 20px; }
+    /* line 23, ../../scss/partials/_left.scss */
+    .bymyside-container-left .bymyside-block-bottom {
+      bottom: 20px; }
+  /* line 28, ../../scss/partials/_left.scss */
   .bymyside-container-left .bymyside-item-icon, .bymyside-container-left .bymyside-item-label {
     font-size: 30px;
     height: 60px; }
-  /* line 34, ../../scss/partials/_left.scss */
+  /* line 33, ../../scss/partials/_left.scss */
   .bymyside-container-left .bymyside-item-icon {
     min-width: 60px; }
-  /* line 38, ../../scss/partials/_left.scss */
+  /* line 37, ../../scss/partials/_left.scss */
   .bymyside-container-left .bymyside-item-label {
     text-align: left; }
-  /* line 42, ../../scss/partials/_left.scss */
-  .bymyside-container-left .bymyside-item-color-default {
+  /* line 41, ../../scss/partials/_left.scss */
+  .bymyside-container-left .bymyside-item-scheme-default {
     background-color: #333333;
     color: #dddddd; }
-    /* line 45, ../../scss/partials/_left.scss */
-    .bymyside-container-left .bymyside-item-color-default:hover .bymyside-item-icon, .bymyside-container-left .bymyside-item-color-default:hover .bymyside-item-label, .bymyside-container-left .bymyside-item-color-default.bymyside-item-highlight .bymyside-item-icon {
+    /* line 44, ../../scss/partials/_left.scss */
+    .bymyside-container-left .bymyside-item-scheme-default:hover .bymyside-item-icon, .bymyside-container-left .bymyside-item-scheme-default:hover .bymyside-item-label, .bymyside-container-left .bymyside-item-scheme-default.bymyside-item-highlight .bymyside-item-icon {
       background-color: #454545;
       color: #efefef; }
 
@@ -118,36 +118,36 @@
   color: #dddddd;
   background-color: #333333; }
   /* line 10, ../../scss/partials/_right.scss */
-  .bymyside-container-right .bymyside {
+  .bymyside-container-right .bymyside-block {
     right: 0;
     background-color: #333333; }
     /* line 13, ../../scss/partials/_right.scss */
-    .bymyside-container-right .bymyside:hover {
+    .bymyside-container-right .bymyside-block:hover {
       border-radius: 10px 0 0 10px; }
       /* line 15, ../../scss/partials/_right.scss */
-      .bymyside-container-right .bymyside:hover .bymyside-item-label {
+      .bymyside-container-right .bymyside-block:hover .bymyside-item-label {
         padding: 0 10px 0 20px; }
-  /* line 21, ../../scss/partials/_right.scss */
-  .bymyside-container-right .bymyside-top {
-    top: 20px; }
-  /* line 25, ../../scss/partials/_right.scss */
-  .bymyside-container-right .bymyside-bottom {
-    bottom: 20px; }
-  /* line 29, ../../scss/partials/_right.scss */
+    /* line 19, ../../scss/partials/_right.scss */
+    .bymyside-container-right .bymyside-block-top {
+      top: 20px; }
+    /* line 23, ../../scss/partials/_right.scss */
+    .bymyside-container-right .bymyside-block-bottom {
+      bottom: 20px; }
+  /* line 28, ../../scss/partials/_right.scss */
   .bymyside-container-right .bymyside-item-icon, .bymyside-container-right .bymyside-item-label {
     font-size: 30px;
     height: 60px; }
-  /* line 34, ../../scss/partials/_right.scss */
+  /* line 33, ../../scss/partials/_right.scss */
   .bymyside-container-right .bymyside-item-icon {
     min-width: 60px; }
-  /* line 38, ../../scss/partials/_right.scss */
+  /* line 37, ../../scss/partials/_right.scss */
   .bymyside-container-right .bymyside-item-label {
     text-align: right; }
-  /* line 42, ../../scss/partials/_right.scss */
-  .bymyside-container-right .bymyside-item-color-default {
+  /* line 41, ../../scss/partials/_right.scss */
+  .bymyside-container-right .bymyside-item-scheme-default {
     background-color: #333333;
     color: #dddddd; }
-    /* line 45, ../../scss/partials/_right.scss */
-    .bymyside-container-right .bymyside-item-color-default:hover .bymyside-item-icon, .bymyside-container-right .bymyside-item-color-default:hover .bymyside-item-label, .bymyside-container-right .bymyside-item-color-default.bymyside-item-highlight .bymyside-item-icon {
+    /* line 44, ../../scss/partials/_right.scss */
+    .bymyside-container-right .bymyside-item-scheme-default:hover .bymyside-item-icon, .bymyside-container-right .bymyside-item-scheme-default:hover .bymyside-item-label, .bymyside-container-right .bymyside-item-scheme-default.bymyside-item-highlight .bymyside-item-icon {
       background-color: #454545;
       color: #efefef; }

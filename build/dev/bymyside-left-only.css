@@ -1,17 +1,17 @@
 /* line 3, ../../scss/partials/_base.scss */
 .bymyside-container {
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   white-space: nowrap; }
 
 /* line 10, ../../scss/partials/_base.scss */
-.bymyside {
+.bymyside-block {
   position: absolute;
   display: table;
   overflow: hidden; }
   /* line 15, ../../scss/partials/_base.scss */
-  .bymyside:hover .bymyside-item-label {
+  .bymyside-block:hover .bymyside-item-label {
     display: table-cell; }
 
 /* line 21, ../../scss/partials/_base.scss */
@@ -35,218 +35,218 @@
   display: none; }
 
 /* line 43, ../../scss/partials/_base.scss */
-.bymyside-item-color-blue {
+.bymyside-item-scheme-blue {
   background-color: transparent;
   color: inherit; }
   /* line 46, ../../scss/partials/_base.scss */
-  .bymyside-item-color-blue:hover .bymyside-item-icon, .bymyside-item-color-blue:hover .bymyside-item-label, .bymyside-item-color-blue.bymyside-item-highlight .bymyside-item-icon {
+  .bymyside-item-scheme-blue:hover .bymyside-item-icon, .bymyside-item-scheme-blue:hover .bymyside-item-label, .bymyside-item-scheme-blue.bymyside-item-highlight .bymyside-item-icon {
     background-color: #5bc0de;
     color: white; }
 
 /* line 43, ../../scss/partials/_base.scss */
-.bymyside-item-color-yellow {
+.bymyside-item-scheme-yellow {
   background-color: transparent;
   color: inherit; }
   /* line 46, ../../scss/partials/_base.scss */
-  .bymyside-item-color-yellow:hover .bymyside-item-icon, .bymyside-item-color-yellow:hover .bymyside-item-label, .bymyside-item-color-yellow.bymyside-item-highlight .bymyside-item-icon {
+  .bymyside-item-scheme-yellow:hover .bymyside-item-icon, .bymyside-item-scheme-yellow:hover .bymyside-item-label, .bymyside-item-scheme-yellow.bymyside-item-highlight .bymyside-item-icon {
     background-color: #f0ad4e;
     color: white; }
 
 /* line 43, ../../scss/partials/_base.scss */
-.bymyside-item-color-red {
+.bymyside-item-scheme-red {
   background-color: transparent;
   color: inherit; }
   /* line 46, ../../scss/partials/_base.scss */
-  .bymyside-item-color-red:hover .bymyside-item-icon, .bymyside-item-color-red:hover .bymyside-item-label, .bymyside-item-color-red.bymyside-item-highlight .bymyside-item-icon {
+  .bymyside-item-scheme-red:hover .bymyside-item-icon, .bymyside-item-scheme-red:hover .bymyside-item-label, .bymyside-item-scheme-red.bymyside-item-highlight .bymyside-item-icon {
     background-color: #d9534f;
     color: white; }
 
 /* line 43, ../../scss/partials/_base.scss */
-.bymyside-item-color-green {
+.bymyside-item-scheme-green {
   background-color: transparent;
   color: inherit; }
   /* line 46, ../../scss/partials/_base.scss */
-  .bymyside-item-color-green:hover .bymyside-item-icon, .bymyside-item-color-green:hover .bymyside-item-label, .bymyside-item-color-green.bymyside-item-highlight .bymyside-item-icon {
+  .bymyside-item-scheme-green:hover .bymyside-item-icon, .bymyside-item-scheme-green:hover .bymyside-item-label, .bymyside-item-scheme-green.bymyside-item-highlight .bymyside-item-icon {
     background-color: #5cb85c;
     color: white; }
 
 /* line 43, ../../scss/partials/_base.scss */
-.bymyside-item-color-rss {
+.bymyside-item-scheme-rss {
   background-color: transparent;
   color: inherit; }
   /* line 46, ../../scss/partials/_base.scss */
-  .bymyside-item-color-rss:hover .bymyside-item-icon, .bymyside-item-color-rss:hover .bymyside-item-label, .bymyside-item-color-rss.bymyside-item-highlight .bymyside-item-icon {
+  .bymyside-item-scheme-rss:hover .bymyside-item-icon, .bymyside-item-scheme-rss:hover .bymyside-item-label, .bymyside-item-scheme-rss.bymyside-item-highlight .bymyside-item-icon {
     background-color: #ff7900;
     color: white; }
 
 /* line 43, ../../scss/partials/_base.scss */
-.bymyside-item-color-twitter {
+.bymyside-item-scheme-twitter {
   background-color: transparent;
   color: inherit; }
   /* line 46, ../../scss/partials/_base.scss */
-  .bymyside-item-color-twitter:hover .bymyside-item-icon, .bymyside-item-color-twitter:hover .bymyside-item-label, .bymyside-item-color-twitter.bymyside-item-highlight .bymyside-item-icon {
+  .bymyside-item-scheme-twitter:hover .bymyside-item-icon, .bymyside-item-scheme-twitter:hover .bymyside-item-label, .bymyside-item-scheme-twitter.bymyside-item-highlight .bymyside-item-icon {
     background-color: #55acee;
     color: white; }
 
 /* line 43, ../../scss/partials/_base.scss */
-.bymyside-item-color-google-plus {
+.bymyside-item-scheme-google-plus {
   background-color: transparent;
   color: inherit; }
   /* line 46, ../../scss/partials/_base.scss */
-  .bymyside-item-color-google-plus:hover .bymyside-item-icon, .bymyside-item-color-google-plus:hover .bymyside-item-label, .bymyside-item-color-google-plus.bymyside-item-highlight .bymyside-item-icon {
+  .bymyside-item-scheme-google-plus:hover .bymyside-item-icon, .bymyside-item-scheme-google-plus:hover .bymyside-item-label, .bymyside-item-scheme-google-plus.bymyside-item-highlight .bymyside-item-icon {
     background-color: #cc3732;
     color: white; }
 
 /* line 43, ../../scss/partials/_base.scss */
-.bymyside-item-color-facebook {
+.bymyside-item-scheme-facebook {
   background-color: transparent;
   color: inherit; }
   /* line 46, ../../scss/partials/_base.scss */
-  .bymyside-item-color-facebook:hover .bymyside-item-icon, .bymyside-item-color-facebook:hover .bymyside-item-label, .bymyside-item-color-facebook.bymyside-item-highlight .bymyside-item-icon {
+  .bymyside-item-scheme-facebook:hover .bymyside-item-icon, .bymyside-item-scheme-facebook:hover .bymyside-item-label, .bymyside-item-scheme-facebook.bymyside-item-highlight .bymyside-item-icon {
     background-color: #3b5999;
     color: white; }
 
 /* line 43, ../../scss/partials/_base.scss */
-.bymyside-item-color-dribbble {
+.bymyside-item-scheme-dribbble {
   background-color: transparent;
   color: inherit; }
   /* line 46, ../../scss/partials/_base.scss */
-  .bymyside-item-color-dribbble:hover .bymyside-item-icon, .bymyside-item-color-dribbble:hover .bymyside-item-label, .bymyside-item-color-dribbble.bymyside-item-highlight .bymyside-item-icon {
+  .bymyside-item-scheme-dribbble:hover .bymyside-item-icon, .bymyside-item-scheme-dribbble:hover .bymyside-item-label, .bymyside-item-scheme-dribbble.bymyside-item-highlight .bymyside-item-icon {
     background-color: #ea4c89;
     color: white; }
 
 /* line 43, ../../scss/partials/_base.scss */
-.bymyside-item-color-dropbox {
+.bymyside-item-scheme-dropbox {
   background-color: transparent;
   color: inherit; }
   /* line 46, ../../scss/partials/_base.scss */
-  .bymyside-item-color-dropbox:hover .bymyside-item-icon, .bymyside-item-color-dropbox:hover .bymyside-item-label, .bymyside-item-color-dropbox.bymyside-item-highlight .bymyside-item-icon {
+  .bymyside-item-scheme-dropbox:hover .bymyside-item-icon, .bymyside-item-scheme-dropbox:hover .bymyside-item-label, .bymyside-item-scheme-dropbox.bymyside-item-highlight .bymyside-item-icon {
     background-color: #007ee5;
     color: white; }
 
 /* line 43, ../../scss/partials/_base.scss */
-.bymyside-item-color-deviantart {
+.bymyside-item-scheme-deviantart {
   background-color: transparent;
   color: inherit; }
   /* line 46, ../../scss/partials/_base.scss */
-  .bymyside-item-color-deviantart:hover .bymyside-item-icon, .bymyside-item-color-deviantart:hover .bymyside-item-label, .bymyside-item-color-deviantart.bymyside-item-highlight .bymyside-item-icon {
+  .bymyside-item-scheme-deviantart:hover .bymyside-item-icon, .bymyside-item-scheme-deviantart:hover .bymyside-item-label, .bymyside-item-scheme-deviantart.bymyside-item-highlight .bymyside-item-icon {
     background-color: #506256;
     color: white; }
 
 /* line 43, ../../scss/partials/_base.scss */
-.bymyside-item-color-bitbucket {
+.bymyside-item-scheme-bitbucket {
   background-color: transparent;
   color: inherit; }
   /* line 46, ../../scss/partials/_base.scss */
-  .bymyside-item-color-bitbucket:hover .bymyside-item-icon, .bymyside-item-color-bitbucket:hover .bymyside-item-label, .bymyside-item-color-bitbucket.bymyside-item-highlight .bymyside-item-icon {
+  .bymyside-item-scheme-bitbucket:hover .bymyside-item-icon, .bymyside-item-scheme-bitbucket:hover .bymyside-item-label, .bymyside-item-scheme-bitbucket.bymyside-item-highlight .bymyside-item-icon {
     background-color: #205081;
     color: white; }
 
 /* line 43, ../../scss/partials/_base.scss */
-.bymyside-item-color-instagram {
+.bymyside-item-scheme-instagram {
   background-color: transparent;
   color: inherit; }
   /* line 46, ../../scss/partials/_base.scss */
-  .bymyside-item-color-instagram:hover .bymyside-item-icon, .bymyside-item-color-instagram:hover .bymyside-item-label, .bymyside-item-color-instagram.bymyside-item-highlight .bymyside-item-icon {
+  .bymyside-item-scheme-instagram:hover .bymyside-item-icon, .bymyside-item-scheme-instagram:hover .bymyside-item-label, .bymyside-item-scheme-instagram.bymyside-item-highlight .bymyside-item-icon {
     background-color: #3f729b;
     color: white; }
 
 /* line 43, ../../scss/partials/_base.scss */
-.bymyside-item-color-tumblr {
+.bymyside-item-scheme-tumblr {
   background-color: transparent;
   color: inherit; }
   /* line 46, ../../scss/partials/_base.scss */
-  .bymyside-item-color-tumblr:hover .bymyside-item-icon, .bymyside-item-color-tumblr:hover .bymyside-item-label, .bymyside-item-color-tumblr.bymyside-item-highlight .bymyside-item-icon {
+  .bymyside-item-scheme-tumblr:hover .bymyside-item-icon, .bymyside-item-scheme-tumblr:hover .bymyside-item-label, .bymyside-item-scheme-tumblr.bymyside-item-highlight .bymyside-item-icon {
     background-color: #2c4762;
     color: white; }
 
 /* line 43, ../../scss/partials/_base.scss */
-.bymyside-item-color-youtube {
+.bymyside-item-scheme-youtube {
   background-color: transparent;
   color: inherit; }
   /* line 46, ../../scss/partials/_base.scss */
-  .bymyside-item-color-youtube:hover .bymyside-item-icon, .bymyside-item-color-youtube:hover .bymyside-item-label, .bymyside-item-color-youtube.bymyside-item-highlight .bymyside-item-icon {
+  .bymyside-item-scheme-youtube:hover .bymyside-item-icon, .bymyside-item-scheme-youtube:hover .bymyside-item-label, .bymyside-item-scheme-youtube.bymyside-item-highlight .bymyside-item-icon {
     background-color: #c4302b;
     color: white; }
 
 /* line 43, ../../scss/partials/_base.scss */
-.bymyside-item-color-reddit {
+.bymyside-item-scheme-reddit {
   background-color: transparent;
   color: inherit; }
   /* line 46, ../../scss/partials/_base.scss */
-  .bymyside-item-color-reddit:hover .bymyside-item-icon, .bymyside-item-color-reddit:hover .bymyside-item-label, .bymyside-item-color-reddit.bymyside-item-highlight .bymyside-item-icon {
+  .bymyside-item-scheme-reddit:hover .bymyside-item-icon, .bymyside-item-scheme-reddit:hover .bymyside-item-label, .bymyside-item-scheme-reddit.bymyside-item-highlight .bymyside-item-icon {
     background-color: orangered;
     color: white; }
 
 /* line 43, ../../scss/partials/_base.scss */
-.bymyside-item-color-flickr {
+.bymyside-item-scheme-flickr {
   background-color: transparent;
   color: inherit; }
   /* line 46, ../../scss/partials/_base.scss */
-  .bymyside-item-color-flickr:hover .bymyside-item-icon, .bymyside-item-color-flickr:hover .bymyside-item-label, .bymyside-item-color-flickr.bymyside-item-highlight .bymyside-item-icon {
+  .bymyside-item-scheme-flickr:hover .bymyside-item-icon, .bymyside-item-scheme-flickr:hover .bymyside-item-label, .bymyside-item-scheme-flickr.bymyside-item-highlight .bymyside-item-icon {
     background-color: #ff0084;
     color: white; }
 
 /* line 43, ../../scss/partials/_base.scss */
-.bymyside-item-color-behance {
+.bymyside-item-scheme-behance {
   background-color: transparent;
   color: inherit; }
   /* line 46, ../../scss/partials/_base.scss */
-  .bymyside-item-color-behance:hover .bymyside-item-icon, .bymyside-item-color-behance:hover .bymyside-item-label, .bymyside-item-color-behance.bymyside-item-highlight .bymyside-item-icon {
+  .bymyside-item-scheme-behance:hover .bymyside-item-icon, .bymyside-item-scheme-behance:hover .bymyside-item-label, .bymyside-item-scheme-behance.bymyside-item-highlight .bymyside-item-icon {
     background-color: #1769ff;
     color: white; }
 
 /* line 43, ../../scss/partials/_base.scss */
-.bymyside-item-color-linkedin {
+.bymyside-item-scheme-linkedin {
   background-color: transparent;
   color: inherit; }
   /* line 46, ../../scss/partials/_base.scss */
-  .bymyside-item-color-linkedin:hover .bymyside-item-icon, .bymyside-item-color-linkedin:hover .bymyside-item-label, .bymyside-item-color-linkedin.bymyside-item-highlight .bymyside-item-icon {
+  .bymyside-item-scheme-linkedin:hover .bymyside-item-icon, .bymyside-item-scheme-linkedin:hover .bymyside-item-label, .bymyside-item-scheme-linkedin.bymyside-item-highlight .bymyside-item-icon {
     background-color: #3399cc;
     color: white; }
 
 /* line 43, ../../scss/partials/_base.scss */
-.bymyside-item-color-vine {
+.bymyside-item-scheme-vine {
   background-color: transparent;
   color: inherit; }
   /* line 46, ../../scss/partials/_base.scss */
-  .bymyside-item-color-vine:hover .bymyside-item-icon, .bymyside-item-color-vine:hover .bymyside-item-label, .bymyside-item-color-vine.bymyside-item-highlight .bymyside-item-icon {
+  .bymyside-item-scheme-vine:hover .bymyside-item-icon, .bymyside-item-scheme-vine:hover .bymyside-item-label, .bymyside-item-scheme-vine.bymyside-item-highlight .bymyside-item-icon {
     background-color: #00b488;
     color: white; }
 
 /* line 43, ../../scss/partials/_base.scss */
-.bymyside-item-color-stack-overflow {
+.bymyside-item-scheme-stack-overflow {
   background-color: transparent;
   color: inherit; }
   /* line 46, ../../scss/partials/_base.scss */
-  .bymyside-item-color-stack-overflow:hover .bymyside-item-icon, .bymyside-item-color-stack-overflow:hover .bymyside-item-label, .bymyside-item-color-stack-overflow.bymyside-item-highlight .bymyside-item-icon {
+  .bymyside-item-scheme-stack-overflow:hover .bymyside-item-icon, .bymyside-item-scheme-stack-overflow:hover .bymyside-item-label, .bymyside-item-scheme-stack-overflow.bymyside-item-highlight .bymyside-item-icon {
     background-color: #fe7a15;
     color: white; }
 
 /* line 43, ../../scss/partials/_base.scss */
-.bymyside-item-color-stumbleupon {
+.bymyside-item-scheme-stumbleupon {
   background-color: transparent;
   color: inherit; }
   /* line 46, ../../scss/partials/_base.scss */
-  .bymyside-item-color-stumbleupon:hover .bymyside-item-icon, .bymyside-item-color-stumbleupon:hover .bymyside-item-label, .bymyside-item-color-stumbleupon.bymyside-item-highlight .bymyside-item-icon {
+  .bymyside-item-scheme-stumbleupon:hover .bymyside-item-icon, .bymyside-item-scheme-stumbleupon:hover .bymyside-item-label, .bymyside-item-scheme-stumbleupon.bymyside-item-highlight .bymyside-item-icon {
     background-color: #eb4924;
     color: white; }
 
 /* line 43, ../../scss/partials/_base.scss */
-.bymyside-item-color-skype {
+.bymyside-item-scheme-skype {
   background-color: transparent;
   color: inherit; }
   /* line 46, ../../scss/partials/_base.scss */
-  .bymyside-item-color-skype:hover .bymyside-item-icon, .bymyside-item-color-skype:hover .bymyside-item-label, .bymyside-item-color-skype.bymyside-item-highlight .bymyside-item-icon {
+  .bymyside-item-scheme-skype:hover .bymyside-item-icon, .bymyside-item-scheme-skype:hover .bymyside-item-label, .bymyside-item-scheme-skype.bymyside-item-highlight .bymyside-item-icon {
     background-color: #00aff0;
     color: white; }
 
 /* line 43, ../../scss/partials/_base.scss */
-.bymyside-item-color-pinterest {
+.bymyside-item-scheme-pinterest {
   background-color: transparent;
   color: inherit; }
   /* line 46, ../../scss/partials/_base.scss */
-  .bymyside-item-color-pinterest:hover .bymyside-item-icon, .bymyside-item-color-pinterest:hover .bymyside-item-label, .bymyside-item-color-pinterest.bymyside-item-highlight .bymyside-item-icon {
+  .bymyside-item-scheme-pinterest:hover .bymyside-item-icon, .bymyside-item-scheme-pinterest:hover .bymyside-item-label, .bymyside-item-scheme-pinterest.bymyside-item-highlight .bymyside-item-icon {
     background-color: #cb2027;
     color: white; }
 
@@ -257,36 +257,36 @@
   color: #dddddd;
   background-color: #333333; }
   /* line 10, ../../scss/partials/_left.scss */
-  .bymyside-container-left .bymyside {
+  .bymyside-container-left .bymyside-block {
     left: 0;
     background-color: #333333; }
     /* line 13, ../../scss/partials/_left.scss */
-    .bymyside-container-left .bymyside:hover {
+    .bymyside-container-left .bymyside-block:hover {
       border-radius: 0 10px 10px 0; }
       /* line 15, ../../scss/partials/_left.scss */
-      .bymyside-container-left .bymyside:hover .bymyside-item-label {
+      .bymyside-container-left .bymyside-block:hover .bymyside-item-label {
         padding: 0 20px 0 10px; }
-  /* line 21, ../../scss/partials/_left.scss */
-  .bymyside-container-left .bymyside-top {
-    top: 20px; }
-  /* line 25, ../../scss/partials/_left.scss */
-  .bymyside-container-left .bymyside-bottom {
-    bottom: 20px; }
-  /* line 29, ../../scss/partials/_left.scss */
+    /* line 19, ../../scss/partials/_left.scss */
+    .bymyside-container-left .bymyside-block-top {
+      top: 20px; }
+    /* line 23, ../../scss/partials/_left.scss */
+    .bymyside-container-left .bymyside-block-bottom {
+      bottom: 20px; }
+  /* line 28, ../../scss/partials/_left.scss */
   .bymyside-container-left .bymyside-item-icon, .bymyside-container-left .bymyside-item-label {
     font-size: 30px;
     height: 60px; }
-  /* line 34, ../../scss/partials/_left.scss */
+  /* line 33, ../../scss/partials/_left.scss */
   .bymyside-container-left .bymyside-item-icon {
     min-width: 60px; }
-  /* line 38, ../../scss/partials/_left.scss */
+  /* line 37, ../../scss/partials/_left.scss */
   .bymyside-container-left .bymyside-item-label {
     text-align: left; }
-  /* line 42, ../../scss/partials/_left.scss */
-  .bymyside-container-left .bymyside-item-color-default {
+  /* line 41, ../../scss/partials/_left.scss */
+  .bymyside-container-left .bymyside-item-scheme-default {
     background-color: #333333;
     color: #dddddd; }
-    /* line 45, ../../scss/partials/_left.scss */
-    .bymyside-container-left .bymyside-item-color-default:hover .bymyside-item-icon, .bymyside-container-left .bymyside-item-color-default:hover .bymyside-item-label, .bymyside-container-left .bymyside-item-color-default.bymyside-item-highlight .bymyside-item-icon {
+    /* line 44, ../../scss/partials/_left.scss */
+    .bymyside-container-left .bymyside-item-scheme-default:hover .bymyside-item-icon, .bymyside-container-left .bymyside-item-scheme-default:hover .bymyside-item-label, .bymyside-container-left .bymyside-item-scheme-default.bymyside-item-highlight .bymyside-item-icon {
       background-color: #454545;
       color: #efefef; }
