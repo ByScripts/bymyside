@@ -1,0 +1,21 @@
+{
+    "name": "bymyside",
+    "authors": [
+        "Thierry Goettelmann <thierry@byscripts.info>"
+    ],
+    "description": "A customizable CSS to make a vertical Sidebar",
+    "keywords": [
+        "sidebar"
+    ],
+    "main": [
+        "./build/min/bymyside.min.css"
+    ],
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ]
+}

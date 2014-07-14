@@ -1,0 +1,55 @@
+@import "schemes";
+
+.bymyside-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    white-space: nowrap;
+}
+
+.bymyside {
+    position: absolute;
+    display: table;
+    overflow: hidden;
+    &:hover {
+        .bymyside-item-label {
+            display: table-cell;
+        }
+    }
+}
+
+.bymyside-item {
+    display: table-row;
+
+    &, &:hover {
+        text-decoration: none;
+    }
+}
+
+.bymyside-item-icon, .bymyside-item-label {
+    vertical-align: middle;
+}
+
+.bymyside-item-icon {
+    display: table-cell;
+    text-align: center;
+}
+
+.bymyside-item-label {
+    display: none;
+}
+
+@each $scheme, $colors in $bymyside-schemes {
+    .bymyside-item-color-#{$scheme} {
+        background-color: map_get($colors, 'bg');
+        color: map_get($colors, 'text');
+        &:hover .bymyside-item-icon,
+        &:hover .bymyside-item-label,
+        &.bymyside-item-highlight .bymyside-item-icon {
+            background-color: map_get($colors, 'bg-hover');
+            color: map_get($colors, 'text-hover');
+        }
+    }
+}
+
+

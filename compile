@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+sass --update -l scss:build/dev
+sass --style compressed --sourcemap scss/bymyside.scss:build/min/bymyside.min.css
+sass --style compressed --sourcemap scss/bymyside-left-only.scss:build/min/bymyside-left-only.min.css
+sass --style compressed --sourcemap scss/bymyside-left-only-no-brands.scss:build/min/bymyside-left-only-no-brands.min.css
+sass --style compressed --sourcemap scss/bymyside-right-only.scss:build/min/bymyside-right-only.min.css
+sass --style compressed --sourcemap scss/bymyside-right-only-no-brands.scss:build/min/bymyside-right-only-no-brands.min.css
+sass --style compressed --sourcemap scss/bymyside-no-brands.scss:build/min/bymyside-no-brands.min.css

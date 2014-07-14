@@ -1,0 +1,53 @@
+@import "variables";
+
+@if $bymyside-right-enabled {
+    .bymyside-container-right {
+        right: 0;
+        width: $bymyside-right-width;
+        color: $bymyside-right-text-color;
+        background-color: $bymyside-right-bg-color;
+
+        .bymyside {
+            right: 0;
+            background-color: $bymyside-right-bg-color;
+            &:hover {
+                border-radius: $bymyside-right-border-radius 0 0 $bymyside-right-border-radius;
+                .bymyside-item-label {
+                    padding: 0 10px 0 20px;
+                }
+            }
+        }
+
+        .bymyside-top {
+            top: $bymyside-right-offset-top;
+        }
+
+        .bymyside-bottom {
+            bottom: $bymyside-right-offset-bottom;
+        }
+
+        .bymyside-item-icon, .bymyside-item-label {
+            font-size: $bymyside-right-font-size;
+            height: $bymyside-right-item-height;
+        }
+
+        .bymyside-item-icon {
+            min-width: $bymyside-right-width;
+        }
+
+        .bymyside-item-label {
+            text-align: right;
+        }
+
+        .bymyside-item-color-default {
+            background-color: $bymyside-right-bg-color;
+            color: $bymyside-right-text-color;
+            &:hover .bymyside-item-icon,
+            &:hover .bymyside-item-label,
+            &.bymyside-item-highlight .bymyside-item-icon {
+                background-color: $bymyside-right-bg-color-hover;
+                color: $bymyside-right-text-color-hover;
+            }
+        }
+    }
+}

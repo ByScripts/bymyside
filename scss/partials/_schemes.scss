@@ -1,0 +1,36 @@
+@import "variables";
+@import "colors";
+
+$bymyside-schemes: (
+    "blue": (text: inherit, bg: transparent, text-hover: #FFF, bg-hover: $bymyside-color-blue),
+    "yellow": (text: inherit, bg: transparent, text-hover: #FFF, bg-hover: $bymyside-color-yellow),
+    "red": (text: inherit, bg: transparent, text-hover: #FFF, bg-hover: $bymyside-color-red),
+    "green": (text: inherit, bg: transparent, text-hover: #FFF, bg-hover: $bymyside-color-green),
+);
+
+@if $bymyside-with-brands {
+    $bymyside-schemes: map_merge($bymyside-schemes, (
+            rss: (text: inherit, bg: transparent, text-hover: #FFF, bg-hover: $bymyside-color-rss),
+            twitter: (text: inherit, bg: transparent, text-hover: #FFF, bg-hover: $bymyside-color-twitter),
+            google-plus: (text: inherit, bg: transparent, text-hover: #FFF, bg-hover: $bymyside-color-google-plus),
+            facebook:  (text: inherit, bg: transparent, text-hover: #FFF, bg-hover: $bymyside-color-facebook),
+            dribbble:  (text: inherit, bg: transparent, text-hover: #FFF, bg-hover: $bymyside-color-dribbble),
+            dropbox:  (text: inherit, bg: transparent, text-hover: #FFF, bg-hover: $bymyside-color-dropbox),
+            deviantart: (text: inherit, bg: transparent, text-hover: #FFF, bg-hover: $bymyside-color-deviantart),
+            bitbucket: (text: inherit, bg: transparent, text-hover: #FFF, bg-hover: $bymyside-color-bitbucket),
+            instagram: (text: inherit, bg: transparent, text-hover: #FFF, bg-hover: $bymyside-color-instagram),
+            tumblr:  (text: inherit, bg: transparent, text-hover: #FFF, bg-hover: $bymyside-color-tumblr),
+            youtube:  (text: inherit, bg: transparent, text-hover: #FFF, bg-hover: $bymyside-color-youtube),
+            reddit: (text: inherit, bg: transparent, text-hover: #FFF, bg-hover: $bymyside-color-reddit),
+            flickr: (text: inherit, bg: transparent, text-hover: #FFF, bg-hover: $bymyside-color-flickr),
+            behance:  (text: inherit, bg: transparent, text-hover: #FFF, bg-hover: $bymyside-color-behance),
+            linkedin:  (text: inherit, bg: transparent, text-hover: #FFF, bg-hover: $bymyside-color-linkedin),
+            vine: (text: inherit, bg: transparent, text-hover: #FFF, bg-hover: $bymyside-color-vine),
+            stack-overflow:  (text: inherit, bg: transparent, text-hover: #FFF, bg-hover: $bymyside-color-stack-overflow),
+            stumbleupon: (text: inherit, bg: transparent, text-hover: #FFF, bg-hover: $bymyside-color-stumbleupon),
+            skype:  (text: inherit, bg: transparent, text-hover: #FFF, bg-hover: $bymyside-color-skype),
+            pinterest: (text: inherit, bg: transparent, text-hover: #FFF, bg-hover: $bymyside-color-pinterest),
+    )) !global;
+}
+
+$bymyside-schemes: map_merge($bymyside-schemes, $bymyside-custom-schemes);
