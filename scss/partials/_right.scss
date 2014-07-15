@@ -13,6 +13,7 @@
         .bymyside-block {
             right: 0;
             background-color: $bymyside-right-bg-color;
+            direction: rtl;
             &:hover {
                 border-radius: $bymyside-right-border-radius 0 0 $bymyside-right-border-radius;
                 .bymyside-item-label {
@@ -26,6 +27,10 @@
             &-bottom {
                 bottom: $bymyside-right-offset-bottom;
             }
+        }
+
+        .bymyside-item {
+            direction: ltr;
         }
 
         .bymyside-item-icon, .bymyside-item-label {
