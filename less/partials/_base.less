@@ -1,0 +1,75 @@
+@import "_schemes";
+
+.bymyside-container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    white-space: nowrap;
+    z-index: 500;
+}
+
+.bymyside-block {
+    position: absolute;
+    display: table;
+    overflow: hidden;
+    &:hover {
+        .bymyside-item-label {
+            display: table-cell;
+        }
+    }
+}
+
+.bymyside-item {
+    display: table-row;
+
+    &, &:hover {
+        text-decoration: none;
+    }
+}
+
+.bymyside-item-icon, .bymyside-item-label {
+    vertical-align: middle;
+}
+
+.bymyside-item-icon {
+    display: table-cell;
+    text-align: center;
+}
+
+.bymyside-item-label {
+    display: none;
+}
+
+
+.generate-scheme(@scheme) when(length(@scheme) = 5) {
+    @name: extract(@scheme, 1);
+    .bymyside-item-scheme-@{name} {
+        color: extract(@scheme, 2);
+        background-color: extract(@scheme, 3);
+        &:hover .bymyside-item-icon,
+        &:hover .bymyside-item-label,
+        &.bymyside-item-highlight .bymyside-item-icon {
+            color: extract(@scheme, 4);
+            background-color: extract(@scheme, 5);
+        }
+    }
+}
+
+.generate-schemes(@index) when (@index > 0) {
+    .generate-schemes((@index - 1));
+    .generate-scheme(extract(@bymyside-schemes, @index))
+}
+
+.generate-brand-schemes(@index) when (@bymyside-with-brands) and (@index > 0) {
+    .generate-brand-schemes((@index - 1));
+    .generate-scheme(extract(@bymyside-brand-schemes, @index))
+}
+
+.generate-custom-schemes(@index) when (@index > 0) {
+    .generate-custom-schemes((@index - 1));
+    .generate-scheme(extract(@bymyside-custom-schemes, @index));
+}
+
+.generate-schemes(length(@bymyside-schemes));
+.generate-brand-schemes(length(@bymyside-brand-schemes));
+.generate-custom-schemes(length(@bymyside-custom-schemes));
