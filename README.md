@@ -28,7 +28,6 @@ Here is the structure of the sidebar:
 <div class="bymyside-container bymyside-container-[left|right]">
     <div class="bymyside-block bymyside-block-[top|bottom]">
         <a href="#" class="bymyside-item bymyside-item-scheme-[default|...] [bymyside-item-highlight]">
-            <!-- You should inverse icon and label on the right sidebar -->
             <span class="bymyside-item-icon">H</span>
             <span class="bymyside-item-label">Hello World</span>
         </a>
@@ -141,3 +140,7 @@ $bymyside-custom-schemes: (
 ```
 
 Then you can use `bymyside-item-scheme-foobar`, `bymyside-item-scheme-barbaz` and `bymyside-item-scheme-hello-world`
+
+## Less
+
+Less is now available. Doc is coming soon...
