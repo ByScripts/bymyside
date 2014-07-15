@@ -1,6 +1,9 @@
 @import "variables";
 
 @if $bymyside-left-enabled {
+    body {
+        padding-left: $bymyside-left-width;
+    }
     .bymyside-container-left {
         left: 0;
         width: $bymyside-left-width;

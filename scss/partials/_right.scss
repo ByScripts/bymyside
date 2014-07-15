@@ -1,6 +1,9 @@
 @import "variables";
 
 @if $bymyside-right-enabled {
+    body {
+        padding-right: $bymyside-right-width;
+    }
     .bymyside-container-right {
         right: 0;
         width: $bymyside-right-width;
